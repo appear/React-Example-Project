@@ -1,0 +1,33 @@
+language: node_js
+node_js:
+  - '12'
+
+services:
+  - docker
+
+before_install:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker build -t sample-next -f Dockerfile .
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: '$AWS_ACCESS_ID'
+  secret_access_key:
+    secure: '$AWS_SECRET_ID'
+  region: 'ap-northeast-2'
+  app: 'sample-next'
+  env: 'sample-next-env'
+  bucket_name: 'sample-next-deploy'
+  on:
+    branch: master   
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+    recipients:
+      - appear.ko@gmail.com
