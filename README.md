@@ -13,7 +13,7 @@ NextJS + Docker + Travis + Beanstalk 을 이용하여 배포 자동화 환경을
 - Project Setup + CI : https://simplereact.gitbook.io/simplereact/nextjs-setup
 - Beanstalk + CD : https://simplereact.gitbook.io/simplereact/nextjs-beanstalk
 
-## 3. NotePad(https://github.com/appear/React-Example-Project/tree/master/notepad)
+## 3. [NotePad](https://github.com/appear/React-Example-Project/tree/master/notepad)
 
 [만들면서 배우는 Hooks 예제](https://simplereact.gitbook.io/simplereact/hooks) 프로젝트입니다.
 
@@ -21,6 +21,6 @@ React Hooks 를 학습하며 간단한 NotePad 를 만듭니다.
 
 feat. Create-React-App, Context API, Hooks, Styled-Components 을 사용합니다.
 
-## 4. NextJS Starter Kit(https://github.com/appear/nextjs-starter-kit)
+## 4. [NextJS Starter Kit](https://github.com/appear/nextjs-starter-kit)
 
 NextJS + Typescript + Styled-Component v5 + StoryBook (with Docs) + Hooks + Context API + now 를 이용하여 Starter Kit 을 구성합니다
