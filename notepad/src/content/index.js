@@ -32,7 +32,7 @@ function Content() {
 
   return (
     <Container padding={{ top: 10, right: 10, bottom: 10, left: 10 }}>
-      <Container display="flex" justify="flex-end">
+      <Container flex justify="flex-end">
         {memo && !isEditing && <Button active>수정</Button>}
         {memo && isEditing && (
           <>

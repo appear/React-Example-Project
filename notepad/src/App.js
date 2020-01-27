@@ -1,23 +1,15 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
 import { ApplicationContextProvider } from "./application-context";
 
+import Container from './container'
 import Memos from "./memos";
 import Content from "./content";
 
 const AppFrame = styled.div`
   display: flex;
   height: 100vh;
-`;
-
-const Container = styled.div`
-  ${({ flex }) =>
-    flex &&
-    css`
-      display: flex;
-      flex: ${flex};
-    `}
 `;
 
 function App() {

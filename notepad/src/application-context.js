@@ -1,22 +1,18 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 const Context = createContext(null);
 
 export function ApplicationContextProvider({ children }) {
-  const [memos, setMemos] = useState([
-    {
-      id: Date.now(),
-      title: "임시 메모 데이터",
-      content: "임시 메모 데이터의 내용",
-      createdAt: new Date()
+  useEffect(() => {
+    async function getMemos() {
+      const response = await fetch('http://localhost:8000/memos')
+      setMemos(response.ok ? await response.json() : [])
     }
-  ]);
-  const [memo, setMemo] = useState({
-    id: Date.now(),
-    title: "임시 메모 데이터",
-    content: "임시 메모 데이터의 내용",
-    createdAt: new Date()
-  });
+    getMemos()
+  }, [])
+
+  const [memos, setMemos] = useState([]);
+  const [memo, setMemo] = useState(null);
 
   const value = {
     memos,

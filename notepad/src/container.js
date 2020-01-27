@@ -2,9 +2,7 @@ import styled, { css } from "styled-components";
 
 const Container = styled.div`
   width: 100%;
-
   
-
   ${({ justify }) =>
     justify &&
     css`
@@ -29,10 +27,11 @@ const Container = styled.div`
       padding-left: ${padding.left}px;
     `};
 
-  ${({ display }) =>
-    display &&
+  ${({ flex }) =>
+    flex &&
     css`
-      display: ${display};
+      display: flex;
+      flex: ${flex};
     `}
 `;
 

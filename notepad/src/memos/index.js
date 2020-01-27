@@ -14,7 +14,6 @@ const MemosFrame = styled.div`
 
 function Memos() {
   const { memos } = useApplicationContext();
-  console.log("memos", memos);
 
   return (
     <MemosFrame>
