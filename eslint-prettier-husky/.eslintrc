@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "prettier",
+    "import",
+    "node",
+    "promise",
+    "standard",
+    "react-hooks"
+  ],
+  "extends": ["plugin:react/recommended", "plugin:prettier/recommended"],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "overrides": []
+}
