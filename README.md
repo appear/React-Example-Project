@@ -24,3 +24,7 @@ feat. Create-React-App, Context API, Hooks, Styled-Components 을 사용합니�
 ## 4. [NextJS Starter Kit](https://github.com/appear/nextjs-starter-kit)
 
 NextJS + Typescript + Styled-Component v5 + StoryBook (with Docs) + Hooks + Context API + now 를 이용하여 Starter Kit 을 구성합니다
+
+## 5. [Eslint-Prettier-Husky](https://github.com/appear/React-Example-Project/tree/master/eslint-prettier-husky)
+
+Eslint, Prettier, Husky 설정
