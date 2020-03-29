@@ -28,3 +28,7 @@ NextJS + Typescript + Styled-Component v5 + StoryBook (with Docs) + Hooks + Cont
 ## 5. [Eslint-Prettier-Husky](https://github.com/appear/React-Example-Project/tree/master/eslint-prettier-husky)
 
 Eslint, Prettier, Husky 설정
+
+## 6. [5분만에 알아보는 Styled-Components](https://github.com/appear/React-Example-Project/tree/master/five-minute-styled-Components)
+
+간단한 예제로 알아보는 Styled-Components

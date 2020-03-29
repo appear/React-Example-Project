@@ -181,3 +181,7 @@ const Container = styled.div`
   ${({ padding }: { padding?: string }) => padding && `padding: ${padding};`}
 `;
 ```
+
+## 9. Theme Provider 를 이용한 Dark Mode 스타일 적용하기
+
+https://simplereact.gitbook.io/simplereact/dark-mode
