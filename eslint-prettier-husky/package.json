@@ -60,8 +60,8 @@
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
-      "eslint .",
-      "stylelint ."
+      "npm run lint",
+      "npm run stylelint"
     ]
   }
 }

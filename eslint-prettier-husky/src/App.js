@@ -5,8 +5,7 @@ import logo from './logo.svg'
 import './App.css'
 
 const Container = styled.div`
-  padding: 10px;
-  margin: 10px;
+  font-size: 15px;
 `
 
 function App() {
